@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section">
+        <div class="title">   
+            <h2>Awesome team <br>Members</h2>        
+            <div class="arrows">
+                <button><i class="fa-solid fa-arrow-left" id="left-arrow"></i></button>
+                <button><i class="fa-solid fa-arrow-right" id="right-arrow"></i></button>
+            </div>
+        </div>
+        <div class="team-members">
+            <div class="member-card1">
+                <img src="image/member_1.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>David Elone</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_2.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Melina Opole</h2>
+                    <h3>WP Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_3.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin" id="linkd"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Melon Bulgery</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_4.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Olinaz Fushi</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_1.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>David Elone</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_2.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Melina Opole</h2>
+                    <h3>WP Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_3.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin" id="linkd"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Melon Bulgery</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+            <div class="member-card1">
+                <img src="image/member_4.jpeg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="content">
+                    <h2>Olinaz Fushi</h2>
+                    <h3>React Developer</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- working slick files  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+    
+    <script>
+        $('.team-members').slick({
+            slidesToShow: 3,
+            speed: 300,
+            prevArrow:'#left-arrow',
+            nextArrow:'#right-arrow',
+            centerPadding: '60px',
+            responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }]});
+    </script>
+</body>
+
+</html>
